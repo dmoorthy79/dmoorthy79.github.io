@@ -1,16 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="../Styles4.css">
-        <title>Dhruv's recipes</title>
-    </head>
-    <body>
-        <h1 id = "title">Dhruv's recipes</h1>
-        <ul>
-            <li><a href = "recipies/German%20Apple%20Cake.html" target = "_blank">German Apple Cake</a></li>
-            <li><a href = "recipies/Fresh Walnut Apple Cake.html" target = "_blank">Fresh Apple Walnut Cake</a></li>
-            <li><a href = "recipies/Easy Plum Cake.html" target = "_blank">Easy Plum Cake</a></li>
-        </ul>
-    </body>
+<html lang = "en">
+<!-- setting up the titular components -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Spanish IV Matching Game</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src = "script.js"></script>
+</head>
+
+<body onload = "shuffleAssign()">
+  <center><h1 id="header">Spanish IV Matching Game</h1></center>
+  <center>
+    <button id="start" onclick="start()">Start Game</button>
+    <select name="Timer" id="tim" onchange="timeChanged()"><option value="timed">Timed</option><option value="untimed">Untimed</option></select>
+    <div id = "Timer2">Time remaining: <span id="time">03:00</span></div>
+    <div>Score: <span id="Score">0</span></div>
+  </center>
+  
+    
+<!--creating the 4x5 grid design of the cards-->
+<div class = "gallery">
+  <div class="column">
+      <div class="item">
+        <p>el género</p>
+      </div>
+      <div class="item">
+        <p>gender</p>
+      </div>
+      <div class="item">
+        <p>la sexualidad</p>
+      </div>
+      <div class="item">
+        <p>sexuality</p>
+      </div>
+  </div>
+  <div class="column">
+      <div class="item">
+        <p>el comportamiento</p>
+      </div>
+      <div class="item">
+        <p>behavior</p>
+      </div>
+      <div class="item">
+        <p>el papel</p>
+      </div>
+      <div class="item">
+        <p>the role</p>
+      </div>
+  </div>
+  <div class="column">
+      <div class="item">
+        <p>la identidad</p>
+      </div>
+      <div class="item">
+        <p>identity</p>
+      </div>
+      <div class="item">
+        <p>la feminidad</p>
+      </div>
+      <div class="item">
+        <p>femininity</p>
+      </div>
+  </div>
+  <div class="column">
+      <div class="item">
+        <p>la masculinidad</p>
+      </div>
+      <div class="item">
+        <p>masculinity</p>
+      </div>
+      <div class="item">
+        <p>el estereotipo</p>
+      </div>
+      <div class="item">
+        <p>stereotype</p>
+      </div>
+  </div>
+  <div class="column">
+      <div class="item">
+        <p>la doble moral</p>
+      </div>
+      <div class="item">
+        <p>double standard</p>
+      </div>
+      <div class="item">
+        <p>la ley</p>
+      </div>
+      <div class="item">
+        <p>the law</p>
+      </div>
+  </div>
+</div>
+</body>
+
 </html>
